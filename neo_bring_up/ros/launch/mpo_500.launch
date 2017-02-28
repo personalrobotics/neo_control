@@ -7,10 +7,10 @@
 		<include file="$(find neo_base_mpo_500)/ros/launch/platform_ctrl/platformCtrl.launch"/> 
 
 		<!--sensors-->
-		<include file="$(find neo_base_mpo_500)/ros/launch/sick/sick_s300.launch"/>	
+		<include file="$(find neo_base_mpo_500)/ros/launch/sick/sick_s300.launch"/>
 		
 		<!--scan unifier-->
-		<include file="$(find neo_base_mpo_500)/ros/launch/sick/cob_scan_unifier.launch"/>		
+		<include file="$(find neo_base_mpo_500)/ros/launch/sick/cob_scan_unifier.launch"/>
 
 		<!--teleoperator-->
 		<include file="$(find neo_teleop)/ros/launch/teleop.launch">
@@ -24,6 +24,6 @@
 
 		<!--tf broadcaster -->
 		<include file="$(find neo_base_mpo_500)/ros/launch/static_transform_pub/base_link_to_laserfront_tf_broadcaster.launch"/>
-		<include file="$(find neo_base_mpo_500)/ros/launch/static_transform_pub/base_link_to_laserback_tf_broadcaster.launch"/>
+		<!--<include file="$(find neo_base_mpo_500)/ros/launch/static_transform_pub/base_link_to_laserback_tf_broadcaster.launch"/>-->
 	</group>
 </launch>
